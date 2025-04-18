@@ -9,6 +9,6 @@ homepage = "https://github.com/reinanbr/sophi"
 repository = "https://github.com/reinanbr/sophi"
 readme = "README.md"
 keywords = ["math", "physics", "rust"]
-categories = ["math", "physics"]
+
 
 [dependencies]
