@@ -1,5 +1,5 @@
-mod functions;
-mod base;
+pub mod functions;
+pub mod base;
 #[cfg(test)]
 mod tests {
     use crate::functions;
