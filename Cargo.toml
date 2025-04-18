@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "sophi-cli",
+    "sophi-lib"
+    ]
+resolver = "2"
