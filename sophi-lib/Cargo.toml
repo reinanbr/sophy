@@ -1,6 +1,6 @@
 [package]
 name = "sophi"
-version = "0.1.12"
+version = "0.1.13"
 edition = "2024"
 authors = ["ReinanBr"]
 description = "Math Physics library in rust"
@@ -11,8 +11,6 @@ readme = "README.md"
 keywords = ["math", "physics", "rust"]
 [package.metadata.docs.rs]
 all-features = true
-rustc-args = ["--cfg", "docsrs"]
-targets = ["x86_64-unknown-linux-gnu"]
 
 
 [dependencies]
