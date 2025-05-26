@@ -1,6 +1,6 @@
 [package]
 name = "sophi"
-version = "0.1.22"
+version = "0.1.21"
 edition = "2024"
 authors = ["ReinanBr"]
 description = "Math Physics library in rust"
@@ -8,9 +8,10 @@ license = "MIT OR Apache-2.0"
 homepage = "https://github.com/reinanbr/sophi"
 repository = "https://github.com/reinanbr/sophi"
 readme = "README.md"
-keywords = ["math", "physics"]
-
 [lib]
-proc-macro = true
+name = "sophi"
+path = "src/lib.rs"
+
+
 
 [dependencies]
