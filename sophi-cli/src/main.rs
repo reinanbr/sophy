@@ -1,6 +1,4 @@
-
 use sophi::methods::raphson;
-
 
 fn main() {
     let f = |x: f64| x * x - 2.0;
@@ -11,4 +9,3 @@ fn main() {
 
     assert!((root - std::f64::consts::SQRT_2).abs() < 1e-10);
 }
-
