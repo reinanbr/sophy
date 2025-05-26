@@ -10,10 +10,6 @@ pub mod base;
 mod tests {
     use crate::methods;
 
-
-
-
-    #[test]
 #[test]
     fn test_raphson() {
         let f = |x: f64| x * x - 2.0; // Function: x^2 - 2
