@@ -1,6 +1,7 @@
 [package]
 name = "sophi"
-version = "0.1.15"
+version = "0.1.16
+"
 edition = "2024"
 authors = ["ReinanBr"]
 description = "Math Physics library in rust"
