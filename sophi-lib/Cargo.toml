@@ -1,10 +1,10 @@
 [package]
 name = "sophi"
-version = "0.1.17"
+version = "0.1.18"
 edition = "2024"
 authors = ["ReinanBr"]
 description = "Math Physics library in rust"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 homepage = "https://github.com/reinanbr/sophi"
 repository = "https://github.com/reinanbr/sophi"
 readme = "README.md"
