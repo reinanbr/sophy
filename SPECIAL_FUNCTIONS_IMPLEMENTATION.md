@@ -162,6 +162,20 @@ capabilities while maintaining full backward compatibility."
 
 # 15. Push para o repositório
 git push origin main --tags
+
+# 16. Correção do Cargo.toml para publicação
+replace_string_in_file sophy-lib/Cargo.toml
+# Remoção de "/examples/*" da lista exclude
+# Adição de configurações explícitas dos exemplos
+
+# 17. Commit das correções
+git add -A && git commit -m "chore: fix Cargo.toml to include examples in published package"
+
+# 18. Push das correções
+git push origin main
+
+# 19. Teste de publicação (dry-run)
+cargo publish --dry-run
 ```
 
 ---
@@ -297,7 +311,43 @@ let basel_exact = std::f64::consts::PI.powi(2) / 6.0;
 let basel_exact: f64 = std::f64::consts::PI.powi(2) / 6.0;
 ```
 
-### **3. Dependência de Versão**
+### **3. Publicação no Crates.io**
+
+#### **Problema:** Exemplos não incluídos no pacote publicado
+```toml
+# ❌ Problema no Cargo.toml
+exclude = [
+    "/.github/*",
+    "/examples/*",    # ⚠️ Remove exemplos da publicação
+    "/target/*",
+    "*.png",
+    "*.jpg"
+]
+```
+
+```
+warning: ignoring example `comprehensive` as `examples/comprehensive.rs` is not included in the published package
+warning: ignoring example `special_functions` as `examples/special_functions.rs` is not included in the published package
+```
+
+#### **Solução:** Configuração explícita dos exemplos
+```toml
+# ✅ Correção no Cargo.toml
+exclude = [
+    "/.github/*",
+    "/target/*",      # Removido "/examples/*"
+    "*.png", 
+    "*.jpg"
+]
+
+[[example]]
+name = "comprehensive"
+path = "examples/comprehensive.rs"
+
+[[example]]  
+name = "special_functions"
+path = "examples/special_functions.rs"
+```
 
 #### **Problema:** Versão incompatível entre biblioteca e CLI
 ```toml
@@ -370,3 +420,42 @@ A implementação das funções especiais matemáticas foi concluída com sucess
 - 🧪 **Qualidade garantida** com testes abrangentes
 
 A biblioteca agora está pronta para ser utilizada em aplicações que requerem funções especiais matemáticas de alta precisão! 🚀✨
+
+---
+
+## 📋 Comandos Finais Executados
+
+### **Verificação Final e Documentação**
+
+```bash
+# 20. Execução da CLI para testar funcionalidade
+cd /home/jzs/sophi && cargo run --bin sophy-cli
+
+# 21. Tentativa de publicação (falhou devido ao exclude)
+cargo publish
+# Exit Code: 101 - Falhou devido a exemplos excluídos
+
+# 22. Verificação com dry-run após correções
+cargo publish --dry-run
+# ✅ Sucesso: Exemplos agora incluídos no pacote
+
+# 23. Criação da documentação completa
+create_file SPECIAL_FUNCTIONS_IMPLEMENTATION.md
+# 📄 Este arquivo de documentação detalhada
+```
+
+### **Status Final dos Arquivos**
+```
+✅ sophy-lib/src/specials/mod.rs - 398 linhas implementadas
+✅ sophy-lib/examples/special_functions.rs - 89 linhas de demonstração  
+✅ sophy-lib/Cargo.toml - Configurado para publicação
+✅ sophy-cli/Cargo.toml - Dependência atualizada
+✅ SPECIAL_FUNCTIONS_IMPLEMENTATION.md - Documentação completa
+```
+
+### **Commits Realizados**
+```
+ad2b9d9 (HEAD -> main, origin/main) chore: fix Cargo.toml to include examples in published package
+2d7b71d (tag: v0.2.0) feat(specials): add special mathematical functions module
+d47ae38 chore: add git workflow tools and templates
+```
