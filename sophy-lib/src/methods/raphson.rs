@@ -3,7 +3,7 @@
 //! Implementation of the Newton-Raphson method for finding roots of real-valued functions.
 //!
 //! The Newton-Raphson method is an iterative root-finding algorithm that uses the formula:
-//! 
+//!
 //! **x_{n+1} = x_n - f(x_n) / f'(x_n)**
 //!
 //! ## Algorithm Properties
@@ -19,7 +19,7 @@
 
 /// Newton-Raphson root-finding method.
 ///
-/// This function finds an approximate root of the equation `f(x) = 0` using the 
+/// This function finds an approximate root of the equation `f(x) = 0` using the
 /// Newton-Raphson iterative method. The algorithm converges quadratically when
 /// the initial guess is sufficiently close to the actual root.
 ///
@@ -51,7 +51,7 @@
 /// ## Examples
 ///
 /// ### Finding √2
-/// 
+///
 /// Find the square root of 2 by solving x² - 2 = 0:
 ///
 /// ```rust

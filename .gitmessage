@@ -1,0 +1,53 @@
+# Tipo(escopo): descrição curta em minúsculo
+#
+# Corpo da mensagem explicando WHAT e WHY, não HOW
+#
+# - Use lista para múltiplas mudanças
+# - Máximo 72 caracteres por linha
+# - Deixe uma linha em branco entre título e corpo
+#
+# Rodapé: Closes #123, Fixes #456, Refs #789
+#
+# ────────────────────────────────────────────────────────────
+# TIPOS DE COMMIT:
+# ────────────────────────────────────────────────────────────
+# feat:     Nova funcionalidade para usuários
+# fix:      Correção de bug para usuários  
+# docs:     Mudanças na documentação
+# style:    Formatação, espaços, ponto e vírgula etc
+# refactor: Refatoração sem mudança funcional
+# test:     Adicionar ou corrigir testes
+# chore:    Atualizações de build, deps, configs etc
+# perf:     Melhoria de performance
+# ci:       Mudanças em CI/CD
+# revert:   Reverter commit anterior
+#
+# ────────────────────────────────────────────────────────────
+# ESCOPOS COMUNS PARA SOPHY:
+# ────────────────────────────────────────────────────────────
+# methods:  Métodos numéricos (raphson, integration, etc)
+# base:     Operações básicas e constantes
+# docs:     Documentação geral
+# ci:       Continuous Integration
+# deps:     Dependências
+# tests:    Sistema de testes
+#
+# ────────────────────────────────────────────────────────────
+# EXEMPLOS PRÁTICOS:
+# ────────────────────────────────────────────────────────────
+# feat(methods): add simpson integration method
+# fix(raphson): handle division by zero edge case  
+# docs: update README with new examples
+# test(methods): add integration method test cases
+# chore: update serde dependency to 1.0.195
+# refactor(base): simplify constant definitions
+#
+# ────────────────────────────────────────────────────────────
+# BREAKING CHANGES:
+# ────────────────────────────────────────────────────────────
+# Para breaking changes, adicione ! após o tipo:
+# feat!(methods): change raphson return type to Result
+#
+# E no corpo, adicione:
+# BREAKING CHANGE: raphson now returns Result instead of f64
+#
