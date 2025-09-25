@@ -1,6 +1,6 @@
 [package]
 name = "sophy"
-version = "0.1.23"
+version = "0.1.24"
 edition = "2024"
 authors = ["ReinanBr <reinaldomkv@gmail.com>"]
 description = "A lightweight, efficient mathematical library for numerical methods, functions, and utilities in pure Rust"
