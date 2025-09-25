@@ -50,14 +50,31 @@
 //!
 //! ### Base Number Operations
 //!
-//! Work with different number bases and conversions:
+//! Work with mathematical constants and utilities:
 //!
 //! ```rust
-//! use sophy::base::numbers;
+//! use sophy::base::numbers::{PI, EULER, PHI};
 //!
-//! // Example: Convert decimal to binary (when implemented)
-//! // let binary = numbers::to_binary(42);
-//! // println!("42 in binary: {}", binary); // Output: 101010
+//! println!("π = {:.6}", PI);       // π = 3.141593
+//! println!("e = {:.6}", EULER);    // e = 2.718282
+//! println!("φ = {:.6}", PHI);      // φ = 1.618034
+//! ```
+//!
+//! ### Special Mathematical Functions
+//!
+//! Advanced mathematical functions for scientific computing:
+//!
+//! ```rust
+//! use sophy::specials::{gamma, zeta, erf};
+//!
+//! // Gamma function: Γ(5) = 4! = 24
+//! let factorial_4 = gamma(5.0);
+//!
+//! // Riemann zeta function: ζ(2) = π²/6
+//! let zeta_2 = zeta(2.0);
+//!
+//! // Error function for probability calculations
+//! let error_val = erf(1.0);
 //! ```
 //!
 //! ## 🏗️ Architecture
@@ -66,6 +83,7 @@
 //!
 //! - [`methods`]: Numerical methods for solving mathematical problems
 //! - [`base`]: Fundamental number operations and utilities
+//! - [`specials`]: Special mathematical functions (gamma, zeta, erf, etc.)
 //!
 //! ## 🔬 Precision & Performance
 //!
@@ -83,6 +101,7 @@
 
 pub mod base;
 pub mod methods;
+pub mod specials;
 #[cfg(test)]
 mod tests {
     use crate::methods;
