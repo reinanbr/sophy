@@ -39,8 +39,8 @@ pub const PI: f64 = std::f64::consts::PI;
 /// ```rust
 /// use sophy::base::numbers::EULER;
 /// 
-/// // e^1 should equal EULER
-/// assert!((EULER.exp().ln() - 1.0).abs() < 1e-15);
+/// // e^1 should equal EULER, and ln(e) should equal 1
+/// assert!((EULER.ln() - 1.0).abs() < 1e-15);
 /// ```
 pub const EULER: f64 = std::f64::consts::E;
 
