@@ -22,7 +22,7 @@
 /// # Example
 ///
 /// ```
-/// use sophi::methods::raphson::raphson;
+/// use sophy::methods::raphson::raphson;
 ///
 /// let f = |x: f64| x * x - 2.0;
 /// let df = |x: f64| 2.0 * x;

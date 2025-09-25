@@ -1,0 +1,32 @@
+[package]
+name = "sophy"
+version = "0.1.23"
+edition = "2024"
+authors = ["ReinanBr <reinaldomkv@gmail.com>"]
+description = "A lightweight, efficient mathematical library for numerical methods, functions, and utilities in pure Rust"
+license = "MIT OR Apache-2.0"
+homepage = "https://github.com/reinanbr/sophy"
+repository = "https://github.com/reinanbr/sophy"
+documentation = "https://docs.rs/sophy"
+readme = "README.md"
+keywords = ["math", "numerical", "mathematics", "scientific", "computing"]
+categories = ["mathematics", "science", "algorithms"]
+exclude = [
+    "/.github/*",
+    "/examples/*",
+    "/target/*",
+    "*.png",
+    "*.jpg"
+]
+
+[lib]
+name = "sophy"
+path = "src/lib.rs"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+
+
+[dependencies]

@@ -1,6 +1,6 @@
 [workspace]
 members = [
-    "sophi-cli",
-    "sophi-lib"
+    "sophy-cli",
+    "sophy-lib"
     ]
 resolver = "2"

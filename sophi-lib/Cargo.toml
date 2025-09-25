@@ -1,15 +1,15 @@
 [package]
-name = "sophi"
+name = "sophy"
 version = "0.1.23"
 edition = "2024"
 authors = ["ReinanBr"]
 description = "Math Physics library in rust"
 license = "MIT OR Apache-2.0"
-homepage = "https://github.com/reinanbr/sophi"
-repository = "https://github.com/reinanbr/sophi"
+homepage = "https://github.com/reinanbr/sophy"
+repository = "https://github.com/reinanbr/sophy"
 readme = "README.md"
 [lib]
-name = "sophi"
+name = "sophy"
 path = "src/lib.rs"
 
 

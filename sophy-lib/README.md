@@ -1,16 +1,21 @@
 
-# sophy
+# Sophy Library 🧮
 
-sophy is a lightweight, efficient, and extensible math library written in pure Rust.  
-It provides mathematical functions, numerical methods, and number utilities for scientific computing, educational tools, or general-purpose applications.
+A lightweight mathematical library for Rust providing numerical methods and mathematical utilities.
+
+[![Crates.io](https://img.shields.io/crates/v/sophy.svg)](https://crates.io/crates/sophy)
+[![Documentation](https://docs.rs/sophy/badge.svg)](https://docs.rs/sophy)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/License-MIT%20OR%20Apache--2.0-blue.svg)](LICENSE)
+
+This is the core library crate. For usage examples and complete documentation, see the [main project README](../README.md).
 
 ## ✨ Features
 
-- ✅ Mathematical functions (e.g., exponential)
-- ✅ Numerical methods (e.g., Newton-Raphson root finder)
-- ✅ Number utilities and base operations
-- ✅ Written in safe, idiomatic Rust
-- ✅ Modular and easy to extend
+- 🔢 **Numerical Methods**: Newton-Raphson root finding and more
+- 📊 **Mathematical Constants**: π, e, φ, and other important constants  
+- 🧮 **Number Utilities**: Base operations and mathematical utilities
+- 🦀 **Pure Rust**: Memory-safe, zero-cost abstractions
+- 📚 **Well Documented**: Comprehensive API documentation
 
 ## 📦 Installation
 
@@ -18,14 +23,10 @@ Add `sophy` as a dependency in your `Cargo.toml`:
 
 ```toml
 [dependencies]
-sophy = { path = "./sophy" }
+sophy = "0.1.23"
 ````
 
-*(Published version coming soon)*
-
-## 🚀 Usage Example
-
-### Newton-Raphson Method
+## 🚀 Quick Example
 
 ```rust
 use sophy::methods::raphson::raphson;
@@ -35,25 +36,15 @@ fn main() {
     let df = |x: f64| 2.0 * x;          // Derivative: 2x
 
     let root = raphson(1.0, f, df, 1e-10, 100);
-    println!("Root approximation: {}", root);
+    println!("Root approximation: {:.10}", root); // √2 ≈ 1.4142135624
 }
 ```
-
-### Exponential Function
-
-```rust
-use sophy::functions::exp::exp;
-
-fn main() {
-    let result = exp(1.0);
-    println!("exp(1) ≈ {}", result); // Should be close to 2.71828...
-}
 ```
 
 ## 📂 Project Structure
 
 ```
-sophy
+sophi
 ├── Cargo.toml
 ├── README.md
 └── src

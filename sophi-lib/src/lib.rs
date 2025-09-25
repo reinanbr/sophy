@@ -1,4 +1,4 @@
-//! # Sophi
+//! # Sophy
 //!
 //! A mathematical library for numerical methods, functions,
 //! and number utilities in Rust.
