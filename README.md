@@ -49,18 +49,8 @@ fn main() {
 }
 ```
 
-## 📂 Project Structure
 
-```
-sophy
-├── Cargo.toml
-├── README.md
-└── src
-    ├── base          // Number utilities
-    ├── functions     // Mathematical functions
-    ├── methods       // Numerical methods
-    └── lib.rs
-```
+
 
 
 ## 🤝 Contributions
