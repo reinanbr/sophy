@@ -11,7 +11,7 @@ It provides mathematical functions, numerical methods, and number utilities for 
 - ✅ Numerical methods (e.g., Newton-Raphson root finder)
 - ✅ Number utilities and base operations
 - ✅ Written in safe, idiomatic Rust
-- ✅ Modular and easy to extend
+
 
 ## 📦 Installation
 
