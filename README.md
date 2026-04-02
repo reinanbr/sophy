@@ -2,7 +2,26 @@
 # sophy
 
 sophy is a lightweight, efficient, and extensible math library written in pure Rust.  
-It provides mathematical functions, numerical methods, and number utilities for scientific computing, educational tools, or general-purpose applications.
+It provides mathematical functions, numerical methods, and number utilities for scientific computing, educational tools, or general-purpose applications
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
