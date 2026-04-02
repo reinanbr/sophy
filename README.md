@@ -4,7 +4,6 @@
 sophy is a lightweight, efficient, and extensible math library written in pure Rust.  
 It provides mathematical functions, numerical methods, and number utilities for scientific computing, educational tools, or general-purpose applications.
 
-## ✨ Features
 
 - ✅ Mathematical functions (e.g., exponential)
 - ✅ Numerical methods (e.g., Newton-Raphson root finder)
