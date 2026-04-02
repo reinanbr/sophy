@@ -62,13 +62,6 @@ sophy
     └── lib.rs
 ```
 
-## 🔧 Roadmap
-
-* [ ] Add more numerical methods (e.g., integration, interpolation)
-* [ ] Implement linear algebra operations
-* [ ] Add probability and statistics functions
-* [ ] Improve error handling (return `Result` instead of `panic!`)
-* [ ] Publish on [crates.io](https://crates.io/)
 
 ## 🤝 Contributions
 
